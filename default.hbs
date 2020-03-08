@@ -43,9 +43,14 @@
                 </div>
                 <div class="site-head-right">
                     <div class="social-links">
-                        <a href="https://instagram.com/ahmgeek" title="Instagram" target="_blank" rel="noopener">Instagram</a>
-                        <a href="https://unsplash.com/ahmgeek" title="Unsplash" target="_blank" rel="noopener">Unsplash</a>
-                        <a href="https://ahmgeek.com/" title="Blog" target="_blank" rel="noopener">Blog</a>
+                      {{#if @site.facebook}}
+                      <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">Facebook</a>
+                      {{/if}}
+                      {{#if @site.twitter}}
+                      <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">Twitter</a>
+                      {{/if}}
+
+                      <a href="https://instagram.com/callimuhammad" title="Instagram" target="_blank" rel="noopener">Instagram</a>
                     </div>
                 </div>
             </div>
